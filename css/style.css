@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:700|Roboto:300,400,700');
+body *, html *{
+    box-sizing: border-box;
+}
 header{
     height: 91px;
 }
@@ -36,24 +39,71 @@ header{
     color:black;
     transition: .7s;
 }
-.box__container{
-    width: 300px;
-    vertical-align: middle;
-    white-space: nowrap;
-    position: relative;
-}
-.box__container input#search{
-    width: 300px;
-    height: 50px;
-    background: white;
+.search-box input {
+    margin-top: 35px;
+    margin-left: 15px;
     border: none;
-    font-size: 14px;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-    float: left;
-    color: #767676;
-    padding-left: 45px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
+    background: none;
+    z-index: 50;
+    width: 17px;
+    height: 25px;
+    transition: all .25s ease-in .25s;
+    color: transparent;
+    font-size: 1em;
+    line-height: 25px;
+}
+
+.search-box input:hover{
+    cursor: pointer;
+}
+.search-box input:hover:focus{
+    cursor: text;
+}
+.search-box input:hover + span{
+    background: rgba(255, 255, 255, .2);
+    z-index: 1;
+}
+.search-box input:focus{
+    width: 200px;
+    padding: 0 10px;
+    outline: none;
+    color: black;
+    background: none;
+    color: black;
+    z-index: 1;
+}
+.search-box input:focus + span{
+    width: 200px;
+    z-index: 1;
+}
+.search-box input:focus + span::before{
+    width: 2px;
+    opacity: 0;
+    transition: all .25s ease-in;
+    z-index: 1;
+}
+.search-box input + span{
+    margin-top: 35px;
+    margin-left: 15px;
+    z-index: 1;
+    position: absolute;
+    border: 2px solid black;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    transition: all .25s ease-in .25s;
+    border-radius: 25px;
+    left: 84.7%;    
+}
+.search-box input + span::before{
+    transition: all .25s ease-in .25s;
+    transform-origin: left top;
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 5px;
     border-radius: 5px;
+    background: black;
+    transform: rotate(45deg) translate(26px, -2px);
+    z-index: 1;
 }
