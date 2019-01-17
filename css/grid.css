@@ -3,9 +3,10 @@
     box-sizing: border-box;
 }
 .container {
-    max-width: 1140px;
-    padding: 0 15px;
     margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
 }
 .row {
     margin: 0 -15px;
@@ -22,7 +23,7 @@
   padding-left: 0;
 }
 .col {
-    padding: 0 15px;
+    padding: 0 30px;
     flex: 1;
     position: relative;
     width: 100%;
