@@ -3,13 +3,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* transition: .20s ease-in-out; */
+    transition: .3s ease-in-out;
     }
 body{
     padding: 0;
     margin: 0;
 }
 header{
+    width: 100%;
     height: 90px;
     position: relative;
 }
@@ -27,7 +28,7 @@ header{
     justify-content: space-between;
 }
 .nav__tab{
-    padding: 20px;
+    padding: 10px;
     position: relative;
     margin: 0 auto;
     display: flex;
@@ -39,7 +40,7 @@ header{
 .tab__nav--menu{
     padding-top: 10px;
 }
-.nav__list,.tab__nav--list{
+.nav__list,.tab__nav--list,.social{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -87,7 +88,7 @@ header{
     margin-top: 5px;
     padding: 0;
 }
-.btn{
+.search__btn{
     position: absolute;
     top: -90%;
     left: 70%;
@@ -127,16 +128,17 @@ header{
 }
 .agency{
     width: 100%;
+    height: 650px;
     outline: none;
 }
 .agency__slide{
     
 }
 .agency__img{
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 .agency__title{}
 .agency__title h2{
@@ -188,10 +190,10 @@ header{
 .design__content p{
     padding-top: 15px;
     text-align: center;
-    letter-spacing: 8px;
+    letter-spacing: 7px;
     position: absolute;
     top: 50%;
-    left: 34%;
+    left: 36%;
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -235,25 +237,118 @@ i.fa-search:before{
 }
 .tab__nav{
     width: 100%;
+    height: 60px;
     border: 1px solid #e1e1e1;
-
+    margin-bottom: 29px;
+}
+.products{
+    width: 100%;
+    height: 1467px;
+    background-color: whitesmoke;
 }
 .products__img{
     margin-top: 35px;
     margin-bottom: 0px;
-    /* position: relative; */
-    filter: grayscale(0);
+    opacity: 0.6;
 }
 .products__img:hover{
-    filter: grayscale(1);
-    transition: 0.5s ease;
-    /* content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease;
-    z-index: 1; */
+    transition: 2s;
+    opacity: 1;
+}
+.load__btn{
+    text-align: center;
+    margin-top: 37px;
+    margin-bottom: 73px;
+}
+.btn{
+    width: 125px;
+    height: 30px;
+    background-color: #959595;
+    border-radius: 2px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-transform: uppercase;
+}
+footer{
+    width: 100%;
+    height: 300px;
+}
+.footer__logo{
+    text-align: center;        
+}
+.footer__logo--img{
+    margin-top: 64px;
+    margin-bottom: 44px;
+}
+.social__media{
+    border: 1px solid #ebebeb;
+    width: 100%;
+    height: 60px;
+}
+.social__item{
+    padding: 10px 25px 0px;
+}
+.social__media .nav{
+    text-align: center;
+    justify-content: center;
+}
+.facebook__link,
+.google__link,
+.twitter__link,
+.linkedin__link,
+.dribble__link,
+.pinterest__link,
+.instagram__link{
+    height: 14px;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.2em;
+}
+.facebook__link:hover{
+    transition: 0.5s;
+    color: #395498;
+}
+.google__link:hover{
+    transition: 0.5s;
+    color: #DC3C2A;
+}
+.twitter__link:hover{
+    transition: 0.5s;
+    color: #3FA6DA;
+}
+.linkedin__link:hover{
+    transition: 0.5s;
+    color:#0077B0;
+}
+.dribble__link:hover{
+    transition: 0.5s;
+    color: #E54786;
+}
+.pinterest__link:hover{
+    transition: 0.5s;
+    color: #B60719;
+}
+.instagram__link:hover{
+    transition: 0.5s;
+    color: #CB125A;
+}
+.last__footer{
+    text-align: center;
+}
+.last__footer--title{
+    padding-top: 36px;
+}
+.last__footer--title p{
+    color: #9c9c9c;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.3em;
+    text-transform: uppercase;
+}
+.last__footer--title p span{
+    color: black;
 }
