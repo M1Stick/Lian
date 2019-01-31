@@ -160,7 +160,7 @@ header{
     text-align: center;
     position: absolute;
     top: 40%;
-    left: 26%;
+    left: 25%;
     height: 34px;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -176,7 +176,7 @@ header{
     letter-spacing: 8px;
     position: absolute;
     top: 50%;
-    left: 33%;
+    left: 32%;
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -366,25 +366,27 @@ footer{
 .last__footer--title p span{
     color: black;
 }
-.heading__agency h2{
+.heading__agency h2,
+.heading__blog h2{
     position: absolute;
     top: 22%;
-    left: 3%;
+    left: 5%;
     letter-spacing: 4px;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
     font-weight: 300;
-    line-height: 1.2em;
+    line-height: 1.2;
     text-transform: uppercase;
     background-color: black;
     padding-left: 33px;
     padding-right: 33px;
 }
-.heading__agency p{
+.heading__agency p,
+.heading__blog p{
     position: absolute;
     top: 34%;
-    left: 3%;
+    left: 5%;
     letter-spacing: 4px;
     color: black;
     font-family: 'Roboto', sans-serif;
@@ -651,4 +653,56 @@ footer{
 .works__img:hover{
     opacity: 1;
     transition: 0.5s ease;
+}
+.heading__blog{
+    margin-bottom: 72px;
+    background-color: #FAFAFA;
+}
+.section__blog{
+    background-color: #FAFAFA;
+}
+.blog__post{
+
+    background-color: white;
+}
+.blog__post h3{
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    padding-top: 93px;
+    padding-left: 43px;
+    padding-right: 35px;
+}
+.blog__post .post__author{
+    color: #ccc;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5em;
+    padding-left: 43px;
+    padding-right: 35px;
+}
+.blog__post .post__content{
+    color: #777;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2em;
+    padding-top: 32px;
+    margin-bottom: 50px;
+    padding-left: 43px;
+    padding-right: 35px;
+}
+.blog__post .post__date{
+    color: #9a9a9a;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 41px;
+    padding-left: 18px;
+    padding-right: 35px;
 }
