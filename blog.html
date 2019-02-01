@@ -16,6 +16,8 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./js/video.js">
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-1.9.1.js">
 </head>
 
 <body>
@@ -43,7 +45,7 @@
                                     <a href="portfolio.html" class="nav__link">PORTFOLIO</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="javascript:void(0)" class="nav__link">BLOG</a>
+                                    <a href="blog.html" class="nav__link">BLOG</a>
                                 </li>
                                 <li class="nav__item">
                                     <a href="javascript:void(0)" class="nav__link">CONTACT</a>
@@ -80,35 +82,159 @@
                         <p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
                             vero cum illo eos. Ipsam est officia officiis totam consectetur ut doloremque? Corporis
                             fugiat nihil, temporibus inventore saepe error doloremque mollitia!</p>
-                        <div class="row">
-                            <div class="col col-6">
-                                <p class="post__date"><span><i class="far fa-calendar"></i></span> on July 19,2016</p>
-                            </div>
-                                <span><i class="fas fa-share-alt"></i>
-                                    <i class="fas fa-heart"></i></span>
+                        <p class="post__date"><span><i class="far fa-calendar"></i></span> on July 19,2016</p>
+                        <div class="post__likes">
+                            <span><i class="fas fa-share-alt"></i>
+                                <i class="fas fa-heart"></i></span>
                         </div>
                     </div>
                     <div class="blog__post">
-                        <h3></h3>
-                        <p class="post__author"></p>
-                        <p class="post__content"></p>
-                        <p class="post__date"></p>
+                        <img width="340" src="./img/post-23.png" alt="">
+                        <h3 class="post__title">I am a Blog Post with an Awesome Image</h3>
+                        <p class="post__author"><span><i class="fas fa-user"></i></span> by Jenn Pereira</p>
+                        <p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                            vero cum illo eos. Ipsam est officia officiis totam consectetur ut doloremque?</p>
+                        <p class="post__date"><span><i class="far fa-calendar"></i></span> on July 19,2016</p>
+                        <div class="post__likes">
+                            <span><i class="fas fa-share-alt"></i>
+                                <i class="fas fa-heart"></i></span>
+                        </div>
                     </div>
                     <div class="blog__post">
-                        <h3></h3>
-                        <p class="post__author"></p>
-                        <p class="post__content"></p>
-                        <p class="post__date"></p>
+                        <img width="340" src="./img/coffee.png" alt="">
+                        <h3>I am a Blog Post Title</h3>
+                        <p class="post__author"><span><i class="fas fa-user"></i></span> by Jenn Pereira</p>
+                        <p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repellendus
+                            vero cum illo eos. Ipsam est officia officiis totam consectetur ut doloremque?</p>
+                        <p class="post__date"><span><i class="far fa-calendar"></i></span> on July 19,2016</p>
+                        <div class="post__likes">
+                            <span><i class="fas fa-share-alt"></i>
+                                <i class="fas fa-heart"></i></span>
+
+                        </div>
                     </div>
                 </div>
                 <div class="col col-4">
-
+                    <div class="blog__post">
+                        <img width="340" src="./img/blog-clock.png" alt="">
+                        <h3 class="post__title">I am a Blog Post with an Awesome Image</h3>
+                        <p class="post__author"><span><i class="fas fa-user"></i></span> by Jenn Pereira</p>
+                        <p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                            vero cum illo eos. Ipsam est officia officiis totam consectetur ut doloremque?</p>
+                        <p class="post__date"><span><i class="far fa-calendar"></i></span> on July 19,2016</p>
+                        <div class="post__likes">
+                            <span><i class="fas fa-share-alt"></i>
+                                <i class="fas fa-heart"></i></span>
+                        </div>
+                    </div>
+                    <div class="blog__post">
+                        <iframe width="340" height="320" src="https://www.youtube.com/embed/-EC8Q6mp8iA" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="blog__post">
+                        <img width="340" src="./img/cricket.png" alt="">
+                        <h3 class="post__title">I am a Blog Post with an Awesome Image</h3>
+                        <p class="post__author"><span><i class="fas fa-user"></i></span> by Jenn Pereira</p>
+                        <p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                            vero cum illo eos. Ipsam est officia officiis totam consectetur ut doloremque?</p>
+                        <p class="post__date"><span><i class="far fa-calendar"></i></span> on July 19,2016</p>
+                        <div class="post__likes">
+                            <span><i class="fas fa-share-alt"></i>
+                                <i class="fas fa-heart"></i></span>
+                        </div>
+                    </div>
                 </div>
                 <div class="col col-4">
-
+                    <div class="sidebar">
+                        <div class="widjet__content">
+                            <div class="widjet__title">
+                                <h3>RECENT POSTS</h3>
+                            </div>
+                            <div class="widjet__posts">
+                                <div class="widjet__post">
+                                    <img src="./img/widjet-1.png" alt="" class="widjet__img">
+                                    <p class="widjet__description">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                                    <p class="widjet__date">July 17,2016</p>
+                                </div>
+                                <div class="widjet__post">
+                                    <img src="./img/widjet-2.png" alt="" class="widjet__img">
+                                    <p class="widjet__description">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                                    <p class="widjet__date">July 17,2016</p>
+                                </div>
+                                <div class="widjet__post">
+                                    <img src="./img/widjet-3.png" alt="" class="widjet__img">
+                                    <p class="widjet__description">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                                    <p class="widjet__date">July 17,2016</p>
+                                </div>
+                                <div class="widjet__post">
+                                    <img src="./img/widjet-4.png" alt="" class="widjet__img">
+                                    <p class="widjet__description">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                                    <p class="widjet__date">July 17,2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tags__content">
+                            <div class="tags__title">
+                                <h3>POPULAR TAGS</h3>
+                            </div>
+                            <div class="tags__posts">
+                                <div class="row">
+                                    <div class="col col-4">
+                                        <div class="tag__post--1">
+                                            <p class="tag__1">construction</p>
+                                        </div>
+                                        <div class="tag__post--4">
+                                            <p class="tag__4">structural design</p>
+                                        </div>
+                                        <div class="tag__post--6">
+                                            <p class="tag__6">industrial</p>
+                                        </div>
+                                    </div>
+                                    <div class="col col-4">
+                                        <div class="tag__post--2">
+                                            <p class="tag__2">engineering</p>
+                                        </div>
+                                        <div class="tag__post--5">
+                                            <p class="tag__5">civil engineer</p>
+                                        </div>
+                                        <div class="tag__post--7">
+                                            <p class="tag__7">managment</p>
+                                        </div>
+                                    </div>
+                                    <div class="col col-4">
+                                        <div class="tag__post--3">
+                                            <p class="tag__3">architecture</p>
+                                        </div>
+                                        <div class="tag__post--8">
+                                            <p class="tag__8">mechanical</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="instagram__content">
+                            <div class="instagram__title">
+                                <h3>INSTAGRAM</h3>
+                            </div>
+                            <div class="instagram__images">
+                                <img src="./img/1.png" alt="">
+                                <img src="./img/4.png" alt="">
+                                <img src="./img/7.png" alt="">
+                                <img src="./img/2.png" alt="">
+                                <img src="./img/5.png" alt="">
+                                <img src="./img/8.png" alt="">
+                                <img src="./img/3.png" alt="">
+                                <img src="./img/6.png" alt="">
+                                <img src="./img/9.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <footer>
         <div class="container">
@@ -116,7 +242,7 @@
                 <div class="col">
                     <div class="main__footer">
                         <div class="footer__logo">
-                            <a href="javascript:void(0)" class="footer__logo--link">
+                            <a href="home.html" class="footer__logo--link">
                                 <img src="./img/logo.png" alt="footer__logo" class="footer__logo--img">
                             </a>
                         </div>
@@ -128,25 +254,25 @@
                     <div class="nav">
                         <ul class="social">
                             <li class="social__item">
-                                <a href="javascript:void(0)" class="facebook__link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/" class="facebook__link"><i class="fab fa-facebook-f"></i></a>
                             </li>
                             <li class="social__item">
-                                <a href="javascript:void(0)" class="google__link"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="https://plus.google.com/" class="google__link"><i class="fab fa-google-plus-g"></i></a>
                             </li>
                             <li class="social__item">
-                                <a href="javascript:void(0)" class="twitter__link"><i class="fab fa-twitter"></i></a>
+                                <a href="https://twitter.com/" class="twitter__link"><i class="fab fa-twitter"></i></a>
                             </li>
                             <li class="social__item">
-                                <a href="javascript:void(0)" class="linkedin__link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/" class="linkedin__link"><i class="fab fa-linkedin-in"></i></a>
                             </li>
                             <li class="social__item">
-                                <a href="javascript:void(0)" class="dribble__link"><i class="fab fa-dribbble"></i></a>
+                                <a href="https://dribbble.com/" class="dribble__link"><i class="fab fa-dribbble"></i></a>
                             </li>
                             <li class="social__item">
-                                <a href="javascript:void(0)" class="pinterest__link"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="https://www.pinterest.com/" class="pinterest__link"><i class="fab fa-pinterest-p"></i></a>
                             </li>
                             <li class="social__item">
-                                <a href="javascript:void(0)" class="instagram__link"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/" class="instagram__link"><i class="fab fa-instagram"></i></a>
                             </li>
                         </ul>
                     </div>

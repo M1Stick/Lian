@@ -3,6 +3,9 @@ html{
     overflow: scroll;
     overflow-x: hidden;
 }
+p{
+    margin: 0;
+}
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
@@ -262,11 +265,12 @@ i.fa-search:before{
 .products__img{
     margin-top: 35px;
     margin-bottom: 0px;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 .products__img:hover{
     transition: 2s;
     opacity: 1;
+    cursor: pointer;
 }
 .load__btn{
     text-align: center;
@@ -606,20 +610,20 @@ footer{
 }
 .details__img{
     padding-top: 103px;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 .details__img--small{
     width: 131px;
     height: 115px;
     padding-top: 10px;
     padding-right: 9px;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 .details__img:hover,
 .details__img--small:hover{
     opacity: 1;
-    transition: 0.5s ease;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 .works{
     background-color: #FAFAFA;
@@ -646,23 +650,24 @@ footer{
     padding-bottom: 55px;
 }
 .works__img{
-    opacity: 0.7;
+    opacity: 0.5;
     margin-bottom: 70px;
     cursor: pointer;
 }
 .works__img:hover{
     opacity: 1;
+    cursor: pointer;
     transition: 0.5s ease;
 }
 .heading__blog{
-    margin-bottom: 72px;
+    padding-bottom: 72px;
     background-color: #FAFAFA;
 }
 .section__blog{
     background-color: #FAFAFA;
 }
 .blog__post{
-
+    margin-top: 72px;
     background-color: white;
 }
 .blog__post h3{
@@ -675,6 +680,7 @@ footer{
     padding-top: 93px;
     padding-left: 43px;
     padding-right: 35px;
+    animation: fade .5s linear forwards;
 }
 .blog__post .post__author{
     color: #ccc;
@@ -684,8 +690,10 @@ footer{
     line-height: 1.5em;
     padding-left: 43px;
     padding-right: 35px;
+    animation: fade .5s linear forwards;
 }
 .blog__post .post__content{
+    text-align: justify;
     color: #777;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -695,14 +703,185 @@ footer{
     margin-bottom: 50px;
     padding-left: 43px;
     padding-right: 35px;
+    animation: fade .5s linear forwards;
 }
 .blog__post .post__date{
+    float: left;
     color: #9a9a9a;
     font-size: 13px;
     font-weight: 400;
     line-height: 1.2em;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 41px;
-    padding-left: 18px;
+    padding-left: 45px;
     padding-right: 35px;
+    animation: fade .5s linear forwards;
+}
+.blog__post .post__likes{
+    padding-left: 245px;
+    animation: fade .5s linear forwards;
+    padding-bottom: 40px;
+}
+.fa-heart:before {
+    content: "\f004";
+    padding-left: 25px;
+    color: #9a9a9a;
+}
+.fa-share-alt:before {
+    content: "\f1e0";
+    color: #9a9a9a;
+}
+.blog__post .post__title{
+    padding-top: 30px;
+}
+.sidebar{
+    background-color: white;
+}
+.widjet__content{
+    padding-bottom: 29px;
+}
+.widjet__title h3{
+    margin-top: 72px;
+    background-color: #EBEBEB;
+    letter-spacing: 8px;
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.widjet__title h3{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.widjet__posts{
+    padding-bottom: 29px;
+}
+.widjet__post{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.widjet__img{
+    float: left;
+    padding-right: 18px;
+    padding-left: 25px;
+}
+.widjet__description{
+    font-family: 'Roboto', sans-serif;
+    color: #3d3d3d;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+.widjet__date{
+    font-family: 'Roboto', sans-serif;
+    color: #777;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 0.9;
+}
+.tags__content{
+    background-color: #FAFAFA;
+}
+.tags__title h3,
+.instagram__title h3{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #EBEBEB;
+    letter-spacing: 8px;
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.tag__post--1{
+    padding-top: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.tag__post--2{
+    padding-top: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.tag__post--3{
+    padding-top: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.tag__post--4{
+    padding-top: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.tag__post--5{
+    padding-top: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.tag__post--6{
+    padding-top: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.tag__post--7{
+    padding-top: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.tag__post--8{
+    padding-top: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.tag__1,
+.tag__2,
+.tag__3,
+.tag__4,
+.tag__5,
+.tag__6,
+.tag__7,
+.tag__8{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: -48px;
+    color: #9c9c9c;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.2;
+    border: 1px solid #eee;
+}
+.tag__3,
+.tag__8{
+    margin-right: -15px;
+}
+.tag__1:hover,
+.tag__2:hover,
+.tag__3:hover,
+.tag__4:hover,
+.tag__5:hover,
+.tag__6:hover,
+.tag__7:hover,
+.tag__8:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.instagram__images{
+    padding-top: 36px;
+    padding-left: 28px;
+}
+.instagram__images img{
+    opacity: 0.7;
+}
+.instagram__images img:hover{
+    opacity: 1;
+    cursor: pointer;
 }
