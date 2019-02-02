@@ -650,6 +650,9 @@ footer{
     padding-top: 40px;
     padding-bottom: 55px;
 }
+.slick-slider{
+    height: 537px;
+}
 .works__img{
     opacity: 0.5;
     margin-bottom: 70px;
